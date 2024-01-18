@@ -22,7 +22,7 @@ export default function Index() {
 
     useEffect(() => {
         getProduct();
-    }, [])
+    }, [] )
 
     const getProduct = () => {
         const { data } = supabase.from('product').select()
